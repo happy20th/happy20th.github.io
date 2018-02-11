@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> SneakPeek </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Bad Script' rel='stylesheet'>
+</head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color:black;
+    font-family: Arial;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: #b3b3cc;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+     background-color: #ddd;
+  color: black;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #660080;
+  color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #b3b3cc;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #660080;
+  color: white;
+}
+</style>
+<body>
+
+
+<!-- Header -->
+<div class="topnav">
+  <a href="index.html">Start</a>		
+  <a href="main.html">Home</a>
+  <a href="wishes.html">Wishes</a>
+  <a class="active" href="javascript:void(0)">Us</a>
+  <a href="Fandom.html">FanDom</a>
+</div>
+<br>
+<h1 style="font-family: 'Bad Script'; color:white; text-align:center;"> Sneak-Peek </h1>
+<div class="tab" style="float:center; padding-left:470px; background-color: #b3b3cc;"> 
+  <button class="tablinks" onclick="openPage(event, 'Page_1')" id="defaultOpen">Page 1</button>  
+  <button class="tablinks" onclick="openPage(event, 'Page_2')">Page 2</button>
+  <button class="tablinks" onclick="openPage(event, 'Page_3')">Page 3</button> 
+</div>
+
+<div id="Page_1" class="tabcontent">
+<div class="row">
+
+<div class="column">
+<div class="content">
+<img src="img/khadakwasla2.jpg" style="width:100%; image-orientation:from-image;" class="image">
+  <h3>Khadakwasla Trip</h3>
+  <p>Our very first outing, the trip to Khadakwasla, from where it all started.</p>
+</div>
+</div>
+
+
+  <div class="column">
+    <div class="content">
+    <img src="img/tbday.jpg" style="width:100%; image-orientation:from-image;">
+      <h3>19.09.2017</h3>
+      <p>Tanvi's Bday Bash!</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="content">
+<img src="img/icekraft.jpg" style="width:100%; image-orientation:from-image;">   
+      <h3>Trip to Bibewadi</h3>
+      <p>The unplanned visit, having super delicious ice-cream, fresh Jamun shots and that mouth-watering chaat at Kalyan Bhel.</p>
+    </div>
+  </div>
+
+  
+
+</div>
+<!-- END GRID -->
+<div class="row">
+
+<div class="column">
+<div class="content">
+  <img src="img/lbday.jpg" style="width:100%; image-orientation:from-image;">
+  <h3>13.11.2017</h3>
+  <p>Litesh's Bday Bash!</p>
+</div>
+</div>
+
+<div class="column">
+<div class="content">
+<img src="img/bedkar.jpg" style="width:100%; image-orientation:from-image;">
+  <h3>Bedkar Misal</h3>
+  <p> The early morning ride to Bedkar Misal for that well-known Puneri misal.</p>
+</div>
+</div>
+
+<div class="column">
+<div class="content">
+<img src="img/lonavla.jpg" style="width:100%; image-orientation:from-image;">
+  <h3>09.07.2017</h3>
+  <p>Trip to Lonavla, the train journey, the experience at Bhushi dam and a tiring-fun day! </p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="Page_2" class="tabcontent">
+<div class="row">
+
+<div class="column">
+<div class="content">
+   <img src="img/friends.jpg" style="width:100%; image-orientation:from-image;" class="image">
+  <h3>F.R.I.E.N.D.S CAFE</h3>
+  <p>The visit to the iconic F.R.I.E.N.D.S CAFE and watching a bunch of episodes together :) </p>
+</div>
+</div>
+
+<div class="column">
+<div class="content">
+<img src="img/pbday.jpg" style="width:100%; image-orientation:from-image;">
+  <h3>09.07.2017</h3>
+  <p>Pradnya's Bday Bash!</p>
+</div>
+</div>
+
+<div class="column">
+    <div class="content">
+    <img src="img/sbday.jpg" style="width:100%; image-orientation:from-image;">
+      <h3>09.10.2017</h3>
+      <p>Saniya's Bday bash!</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="row">
+
+<div class="column">
+<div class="content">
+   <img src="img/tulshibagh.jpg" style="width:100%; image-orientation:from-image;" class="image">
+  <h3>Trip to Tulshi Bagh</h3>
+  <p>Wandering on the streets, looking for electronic components and then having that amazing meal at Kaka Halwai.</p>
+</div>
+</div>
+
+ <div class="column">
+<div class="content">
+<img src="img/pheonix.jpg" style="width:100%; image-orientation:from-image;" class="image">
+  <h3>24.12.2017</h3>
+  <p>The long journey to Pheonix Mall, the christmas celebration, amazing food and amazing people.</p>
+  
+</div>
+</div>
+
+<div class="column">
+    <div class="content">
+    <img src="img/burgerbarn.jpg" style="width:100%; image-orientation:from-image;" class="image">
+      <h3>16.04.2017</h3>
+      <p>Vindeep's Bday Bash!</p>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+<div id="Page_3" class="tabcontent">
+<div class="row">
+
+<div class="column">
+<div class="content">
+     <img src="img/burgerking.jpg" style="width:100%; image-orientation:from-image;" class="image">
+  <h3>Visit to Burger King</h3>
+  <p>Cravings for burgers and softies fulfilled, truckloads of ugly pictures clicked and many memories created.</p>
+</div>
+</div>
+
+<div class="column">
+<div class="content">
+<img src="img/group.jpg" style="width:100%; image-orientation:from-image;" class="image">
+  <h3>Addiction'18</h3>
+  <p>The least planned event, we rocked it with our swag, looks and US!</p>
+</div>
+</div>
+
+<div class="column">
+<div class="content">
+<img src="img/mulshi.jpg" style="width:100%; image-orientation:from-image;" class="image">
+  <h3>Mulshi Dam</h3>
+  <p>The early morning long ride to Mulshi dam, the amazig views and that water fight, all in all, an amazing day.</p>
+</div>
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="column">
+<div class="content">
+     <img src="img/empressgarden.jpg" style="width:100%; image-orientation:from-image;" class="image">
+  <h3>Empress garden</h3>
+  <p>Watching the movie Muramba, amazing lunch at Panchali, and the visit to empress garden. </p>
+</div>
+</div>
+
+<div class="column">
+<div class="content">
+<img src="img/sarasbagh.jpg" style="width:100%; image-orientation:from-image;" class="image">
+  <h3>Sarasbagh</h3>
+  <p>Post Addiction visit to SarasBagh, the most awaited visit to have pool gate ka Burger and lots of fun.</p>
+</div>
+</div>
+
+
+
+ <div class="column">
+    <div class="content">
+     <img src="img/flat.jpg" style="width:100%; image-orientation:from-image;">
+      <h3>The Flat Fun</h3>
+      <p>To those amazing meals had, endless jokes cracked, and the games played! <br> CHEERS!</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<script>
+function openPage(evt, PageNo) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(PageNo).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+</script>
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">
+  Created by F.R.I.E.N.D.S.  </p>
+</footer>
+</body>
+</html>
+
